@@ -360,9 +360,7 @@ export const InteractiveGatefoldEnvelope: React.FC<InteractiveGatefoldEnvelopePr
                 {config.envelope.tapPrompt}
               </span>
             </div>
-            <span className="mt-2 font-lacy-text text-xs italic tracking-wide text-[#6A5A49]/90 drop-shadow-[0_1px_2px_rgba(255,255,255,0.85)]">
-              {config.envelope.subPrompt}
-            </span>
+     
           </motion.div>
         </motion.div>
       )}

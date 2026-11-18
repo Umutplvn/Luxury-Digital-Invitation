@@ -70,7 +70,6 @@ export interface InvitationConfig {
   /** Kapalı zarf / kapak etkileşim metinleri */
   envelope: {
     tapPrompt: string;
-    subPrompt: string;
   };
 
   /** Bölümler arası gezinme etiketleri */
@@ -173,7 +172,6 @@ export const invitationConfig: InvitationConfig = {
 
   envelope: {
     tapPrompt: 'Tap to Open',
-    subPrompt: 'Touch the mother-of-pearl clasp to open your invitation',
   },
 
   navigation: {
