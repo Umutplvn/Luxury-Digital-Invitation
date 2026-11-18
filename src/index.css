@@ -1,0 +1,409 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --lacy-ink: #655645;
+    --lacy-ink-deep: #4E4032;
+    --lacy-gold: #B28A5D;
+    --lacy-gold-deep: #8F6B42;
+    --lacy-cream: #EFEAE3;
+    --lacy-beige: #D9CEC5;
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #EFEAE3;
+    color: var(--lacy-ink);
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum" 1;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #EFEAE3;
+    min-height: 100dvh;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Reference Typography System */
+.font-lacy-display {
+  font-family: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
+
+.font-lacy-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
+
+.font-lacy-text {
+  font-family: 'EB Garamond', 'Cormorant Garamond', Georgia, serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
+
+.font-lacy-script {
+  font-family: 'Pinyon Script', 'Great Vibes', cursive;
+}
+
+.font-engraved {
+  font-family: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-luxury {
+  font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ============================================================================
+   VARIANT 01 — THE IVORY (Original Letterpress & Nacre Finishes)
+   ============================================================================ */
+.lacy-debossed-ink {
+  color: #5E4F3E;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.92),
+    0 -0.5px 0.5px rgba(58, 44, 30, 0.22),
+    0 2px 4px rgba(114, 99, 81, 0.08);
+}
+
+.lacy-debossed-name {
+  color: #635342;
+  text-shadow:
+    0 1.5px 0 rgba(255, 255, 255, 0.95),
+    0 -0.8px 1px rgba(55, 42, 28, 0.24),
+    0 4px 10px rgba(114, 99, 81, 0.1);
+}
+
+.lacy-embossed-gold {
+  color: #8F6B42;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.92),
+    0 -0.5px 1px rgba(95, 68, 34, 0.25);
+}
+
+.lacy-nacre-button {
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(166deg, #FFFFFF 0%, #FDFAF5 42%, #F2EBE0 100%) padding-box,
+    linear-gradient(150deg, #E6CB94 0%, #B08A5E 40%, #DCC191 68%, #9B7A50 100%) border-box;
+  box-shadow:
+    0 6px 16px rgba(130, 104, 74, 0.22),
+    inset 0 0 0 2.5px rgba(255, 255, 255, 0.95),
+    inset 0 0 0 3.5px rgba(178, 138, 93, 0.45),
+    inset 0 2px 3px rgba(255, 255, 255, 0.9);
+  color: #5E4F3E;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s ease;
+}
+
+.lacy-nacre-button:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 9px 22px rgba(130, 104, 74, 0.28),
+    inset 0 0 0 2.5px rgba(255, 255, 255, 0.98),
+    inset 0 0 0 3.5px rgba(178, 138, 93, 0.58),
+    inset 0 2px 3px rgba(255, 255, 255, 0.95);
+}
+
+.lacy-nacre-button:active {
+  transform: scale(0.98);
+}
+
+.lacy-pearl-bead {
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 35% 28%,
+    #FFFFFF 0%,
+    #FFFAF2 18%,
+    #F6E8D8 48%,
+    #E4CFB6 78%,
+    #C9AB8C 100%
+  );
+  box-shadow:
+    0 2px 4px rgba(120, 96, 70, 0.32),
+    inset 0 -2px 3px rgba(160, 130, 100, 0.26);
+}
+
+/* ============================================================================
+   VARIANT 02 — THE BLUSH (Romantic Blush, Dusty Rose & Muted Sage Finishes)
+   ============================================================================ */
+.blush-debossed-ink {
+  color: #5D3F3B;
+  text-shadow:
+    0 1px 0 rgba(255, 250, 249, 0.94),
+    0 -0.5px 0.5px rgba(82, 46, 40, 0.22);
+}
+
+.blush-debossed-name {
+  color: #593A36;
+  text-shadow:
+    0 1.5px 0 rgba(255, 250, 249, 0.96),
+    0 -0.8px 1px rgba(78, 42, 36, 0.25),
+    0 4px 10px rgba(168, 104, 88, 0.12);
+}
+
+.blush-embossed-rosegold {
+  color: #9E5E50;
+  text-shadow:
+    0 1px 0 rgba(255, 250, 249, 0.92),
+    0 -0.5px 1px rgba(110, 56, 44, 0.25);
+}
+
+.blush-nacre-button {
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(166deg, #FFFDFC 0%, #FDF4F2 45%, #F6E4E0 100%) padding-box,
+    linear-gradient(150deg, #E8B8AC 0%, #B87868 42%, #8EA48F 68%, #9E6052 100%) border-box;
+  box-shadow:
+    0 6px 16px rgba(148, 92, 80, 0.22),
+    inset 0 0 0 2.5px rgba(255, 252, 250, 0.95),
+    inset 0 0 0 3.5px rgba(184, 120, 104, 0.42);
+  color: #5D3F3B;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s ease;
+}
+
+.blush-nacre-button:hover {
+  transform: translateY(-1px);
+}
+
+.blush-pearl-bead {
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 35% 28%,
+    #FFFFFF 0%,
+    #FFF6F4 22%,
+    #F7DCD6 54%,
+    #E2B5AC 82%,
+    #C48B7E 100%
+  );
+  box-shadow:
+    0 2px 4px rgba(138, 84, 72, 0.32),
+    inset 0 -2px 3px rgba(168, 104, 90, 0.26);
+}
+
+/* ============================================================================
+   VARIANT 03 — THE EMERALD (Celtic Heritage, Emerald & Aged Parchment Finishes)
+   ============================================================================ */
+.emerald-debossed-ink {
+  color: #1A3A2B;
+  text-shadow:
+    0 1px 0 rgba(255, 251, 242, 0.92),
+    0 -0.5px 0.5px rgba(12, 38, 26, 0.24);
+}
+
+.emerald-debossed-name {
+  color: #112C1F;
+  text-shadow:
+    0 1.5px 0 rgba(255, 252, 244, 0.95),
+    0 -0.8px 1px rgba(10, 34, 24, 0.28),
+    0 4px 10px rgba(20, 56, 40, 0.12);
+}
+
+.emerald-embossed-gold {
+  color: #846226;
+  text-shadow:
+    0 1px 0 rgba(255, 252, 244, 0.92),
+    0 -0.5px 1px rgba(68, 48, 16, 0.26);
+}
+
+.emerald-nacre-button {
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(166deg, #173F30 0%, #102E23 52%, #0B2219 100%) padding-box,
+    linear-gradient(150deg, #E8CC8C 0%, #B58E44 42%, #DFC07B 68%, #8F6C28 100%) border-box;
+  box-shadow:
+    0 6px 18px rgba(4, 16, 11, 0.42),
+    inset 0 0 0 1.5px rgba(232, 204, 140, 0.38);
+  color: #F4E6C6;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s ease;
+}
+
+.emerald-nacre-button:hover {
+  transform: translateY(-1px);
+}
+
+.emerald-pearl-bead {
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 35% 28%,
+    #FFFDF7 0%,
+    #F5E6C4 28%,
+    #D6B46E 62%,
+    #9E7B38 100%
+  );
+  box-shadow:
+    0 2px 5px rgba(4, 18, 12, 0.45),
+    0 0 8px rgba(229, 198, 126, 0.35);
+}
+
+/* ============================================================================
+   VARIANT 04 — THE NOIR (Fifth Avenue Pearl Silk, Rose Champagne & Espresso Ink)
+   ============================================================================ */
+.noir-debossed-ink {
+  color: #3D3532;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.94);
+}
+
+.noir-debossed-name {
+  color: #231F20;
+  text-shadow:
+    0 1.5px 0 rgba(255, 255, 255, 0.96),
+    0 4px 12px rgba(92, 72, 54, 0.10);
+}
+
+.noir-embossed-gold {
+  color: #9E7638;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+.noir-nacre-button {
+  border-radius: 9999px;
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(166deg, #FFFFFF 0%, #FAF5EE 48%, #EFE4D6 100%) padding-box,
+    linear-gradient(150deg, #E5C99B 0%, #B88E4A 45%, #231F20 100%) border-box;
+  box-shadow:
+    0 6px 16px rgba(58, 44, 32, 0.16),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.95);
+  color: #231F20;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s ease;
+}
+
+.noir-nacre-button:hover {
+  transform: translateY(-1px);
+}
+
+.noir-pearl-bead {
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 35% 28%,
+    #FFFDF8 0%,
+    #F5DFB0 28%,
+    #D6B26E 62%,
+    #8C6928 100%
+  );
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.65),
+    0 0 8px rgba(214, 178, 110, 0.4);
+}
+
+/* ============================================================================
+   VARIANT 05 — THE CHÂTEAU BLUE (Powder Blue, Porcelain White & Antique Gold)
+   ============================================================================ */
+.chateau-debossed-ink {
+  color: #2B4056;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.94),
+    0 -0.5px 0.5px rgba(32, 50, 68, 0.22);
+}
+
+.chateau-debossed-name {
+  color: #213448;
+  text-shadow:
+    0 1.5px 0 rgba(255, 255, 255, 0.96),
+    0 -0.8px 1px rgba(28, 44, 62, 0.25),
+    0 4px 10px rgba(74, 102, 128, 0.12);
+}
+
+.chateau-embossed-silver {
+  color: #8C6B32;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.95),
+    0 -0.5px 1px rgba(68, 48, 18, 0.24);
+}
+
+.chateau-nacre-button {
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(166deg, #FFFFFF 0%, #F5F8FC 45%, #E7EFF7 100%) padding-box,
+    linear-gradient(150deg, #EED69F 0%, #C4A265 42%, #84A3C0 68%, #8C6B32 100%) border-box;
+  box-shadow:
+    0 6px 16px rgba(56, 80, 104, 0.20),
+    inset 0 0 0 2.5px rgba(255, 255, 255, 0.96),
+    inset 0 0 0 3.5px rgba(196, 162, 101, 0.42);
+  color: #213448;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s ease;
+}
+
+.chateau-nacre-button:hover {
+  transform: translateY(-1px);
+}
+
+.chateau-pearl-bead {
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 35% 28%,
+    #FFFFFF 0%,
+    #F7FAFF 22%,
+    #DCE6F2 54%,
+    #C4A265 88%,
+    #8C6B32 100%
+  );
+  box-shadow:
+    0 2px 4px rgba(58, 80, 104, 0.32),
+    inset 0 -2px 3px rgba(90, 114, 140, 0.26);
+}
+
+/* Subtle Shimmer Sweep on Nacre Seal */
+@keyframes shimmerSweep {
+  0% {
+    transform: translateX(-130%) rotate(24deg);
+  }
+  45%, 100% {
+    transform: translateX(230%) rotate(24deg);
+  }
+}
+
+.shimmer-overlay::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 55%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.58) 50%,
+    transparent 100%
+  );
+  animation: shimmerSweep 6s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shimmer-overlay::after {
+    animation: none;
+  }
+}
+
+/* Quiet Luxury Foil & Tactile Elevation */
+.blush-nacre-button:hover,
+.emerald-nacre-button:hover,
+.noir-nacre-button:hover,
+.chateau-nacre-button:hover {
+  transform: translateY(-1.5px);
+  filter: brightness(1.03);
+}
+
+.blush-nacre-button:active,
+.emerald-nacre-button:active,
+.noir-nacre-button:active,
+.chateau-nacre-button:active {
+  transform: scale(0.98);
+}

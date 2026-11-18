@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <radialGradient id="sealGrad" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="55%" stop-color="#EFE7DA"/>
+      <stop offset="100%" stop-color="#D7C7B2"/>
+    </radialGradient>
+    <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DEC496"/>
+      <stop offset="50%" stop-color="#B89660"/>
+      <stop offset="100%" stop-color="#8C6D3F"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="60" cy="60" rx="46" ry="54" fill="url(#sealGrad)" stroke="url(#goldRim)" stroke-width="3"/>
+  <ellipse cx="60" cy="60" rx="39" ry="47" stroke="url(#goldRim)" stroke-width="1" stroke-dasharray="2 2"/>
+  <path d="M60 92 C60 72, 60 45, 60 28" stroke="#B89660" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M60 75 C50 70, 44 62, 46 54 C52 57, 57 65, 60 75 Z" fill="#C5A572" opacity="0.65"/>
+  <path d="M60 68 C70 63, 76 55, 74 47 C68 50, 63 58, 60 68 Z" fill="#C5A572" opacity="0.65"/>
+  <path d="M60 54 C51 49, 47 41, 49 34 C54 37, 58 45, 60 54 Z" fill="#C5A572" opacity="0.65"/>
+  <circle cx="60" cy="26" r="2.5" fill="#FDFBF7" stroke="#B89660" stroke-width="1"/>
+  <circle cx="46" cy="53" r="2" fill="#FDFBF7" stroke="#B89660" stroke-width="0.8"/>
+  <circle cx="74" cy="46" r="2" fill="#FDFBF7" stroke="#B89660" stroke-width="0.8"/>
+</svg>

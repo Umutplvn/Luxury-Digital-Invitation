@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/(ivory|blush|emerald|noir|chateau-blue|golden-rose)",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/(ivory|blush|emerald|noir|chateau-blue|golden-rose)/",
+      "destination": "/index.html"
+    }
+  ]
+}
